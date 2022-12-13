@@ -1,7 +1,7 @@
 STEP 1->
 
 Pull the code from the repository using following command:-
-git pull https://github.com/swappys/blockchainCodes.git
+git pull https://github.com/NikhilMondhe1234/nci2022sem1.git
 
 STEP 2->
 
