@@ -26,3 +26,6 @@ myWallet.from_path(path=path)
 
 print("wallet address = " + myWallet.address())
 print("private key:  " + myWallet.private_key())
+
+
+

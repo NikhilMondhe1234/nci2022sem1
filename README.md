@@ -1,9 +1,9 @@
-Steps For Exceution of Code 
+Application Execution Steps:-
 
 STEP 1->
 
 Pull the code from the repository using following command:-
-git pull https://github.com/NikhilMondhe1234/nci2022sem1.git
+git pull https://github.com/NikhilMondhe1234/nci2022sem1
 
 STEP 2->
 
@@ -16,6 +16,7 @@ After the process of unzipping, import the above project into Visual Studio Code
 STEP 4->
 
 For the code to run properly, we need to add an .env file in the same directory, hence create a .env file which will contain 
+
 1.INFURA_URL- For this you will have to create an Infura account and in that copy the GORLI url from ethereum section and assign it to INFURA_URL variable.
 
 2.CONTRACT_ADDRESS- For this, go to the etherscan and fetch the address of contract that was created and assign it to CONTRACT_ADDRESS variable.
@@ -26,7 +27,6 @@ For the code to run properly, we need to add an .env file in the same directory,
 Enter the same and assign it to this variable.
 
 5.SEED_PHRASE- This is the secret phase which will be visible on security & privacy section in metamask setting. Click on reveal secret recovery phase to access the same.
-
 Assign it to this variable.
 
 After setting up these variables with their respective keys, your .env file is ready. Save it.
@@ -48,6 +48,6 @@ curl --header "Content-Type: application/json" --request POST --data'{"address":
 the above command will transfer the eth to the receiver address which is mentioned above.
 
 To transfer token enter the following command->
-curl --header "Content-Type: application/json" --request POST --data'{"address":<receiver_address}'http://localhost:8090/token
+curl --header "Content-Type: application/json" --request POST --data'{"address":<receiver_address>}'http://localhost:8090/token
 
 

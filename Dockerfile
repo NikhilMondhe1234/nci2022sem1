@@ -10,4 +10,5 @@ RUN pip install python-decouple
 RUN pip install hdwallet
 
 EXPOSE 8080
+
 CMD ["python3", "webserver.py"]

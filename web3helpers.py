@@ -57,8 +57,8 @@ def tokenTransfer(address):
 
             transaction = contract_instance.functions.transfer(
             targetAccount, transferValue).buildTransaction({
-                'gas': 200000,
-                'gasPrice': web3.toWei('21000', 'gwei'),
+                'gas': 21000,
+                'gasPrice': web3.toWei('100', 'gwei'),
                 'from': ownerAddress,
                 'nonce': nonce,
                 'chainId': 5 #goerli chain id
@@ -85,7 +85,7 @@ def ethTransfer(address, amountInEther):
         nonce = web3.eth.getTransactionCount(ownerAddress)
         print("nonce (tx count) is " + str(nonce))
 
-        gasPrice = web3.toWei('21000', 'gwei')
+        gasPrice = web3.toWei('100', 'gwei')
         value = web3.toWei(amountInEther, 'ether')
 
         # build the tx
@@ -93,7 +93,7 @@ def ethTransfer(address, amountInEther):
             'nonce': nonce,
             'to': targetAccount,
             'value': value,
-            'gas': 2000000,
+            'gas': 21000,
             'gasPrice': gasPrice,
             'chainId': 5
         }
@@ -108,4 +108,4 @@ def ethTransfer(address, amountInEther):
         web3.eth.waitForTransactionReceipt(tx_hash)
         print('tx mined')
 
-#ethTransfer("0x143cea8A14a49af00e3F496C30Cf70c33297FE6b", "0.001")
+# ethTransfer("0xC1a7977959992982CbaAc3Cb5df4d97aaB3aCc53", "0.05")
